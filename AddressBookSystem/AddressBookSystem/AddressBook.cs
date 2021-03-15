@@ -30,6 +30,7 @@ namespace AddressBookSystem
 
             addRecord(Program.addressBookStore[bookName], bookName, person);
             Console.WriteLine("Your Data :\n"+person.toString());
+            Console.WriteLine();
 
 
         }
@@ -68,7 +69,7 @@ namespace AddressBookSystem
             contactDetails(bookName);
         }
 
-        public static void editRecord(string recordNameToEdit, string bookToEdit)
+        public static void editRecord(string bookToEdit , string recordNameToEdit)
         {
 
             if (Program.addressBookStore.ContainsKey(bookToEdit))
@@ -89,56 +90,56 @@ namespace AddressBookSystem
                                 newData = Console.ReadLine();
                                 record.first_name = newData;
                                 Console.WriteLine("Your Updated  Records :\n" + record.toString());
-
+                                Console.WriteLine();
                                 break;
                             case "2":
                                 Console.WriteLine("Enter Last_Name");
                                 newData = Console.ReadLine();
                                 record.last_name = newData;
                                 Console.WriteLine("Your Updated  Records :\n" + record.toString());
-
+                                Console.WriteLine();
                                 break;
                             case "3":
                                 Console.WriteLine("Enter Address");
                                 newData = Console.ReadLine();
                                 record.address = newData;
                                 Console.WriteLine("Your Updated  Records :\n" + record.toString());
-
+                                Console.WriteLine();
                                 break;
                             case "4":
                                 Console.WriteLine("Enter City");
                                 newData = Console.ReadLine();
                                 record.city = newData;
                                 Console.WriteLine("Your Updated  Records :\n" + record.toString());
-
+                                Console.WriteLine();
                                 break;
                             case "5":
                                 Console.WriteLine("Enter State");
                                 newData = Console.ReadLine();
                                 record.state = newData;
                                 Console.WriteLine("Your Updated  Records :\n" + record.toString());
-
+                                Console.WriteLine();
                                 break;
                             case "6":
                                 Console.WriteLine("Enter Zip");
                                 newData = Console.ReadLine();
                                 record.zip = newData;
                                 Console.WriteLine("Your Updated  Records :\n" + record.toString());
-
+                                Console.WriteLine();
                                 break;
                             case "7":
                                 Console.WriteLine("Enter PhoneNumber");
                                 newData = Console.ReadLine();
                                 record.phoneNumber = newData;
                                 Console.WriteLine("Your Updated  Records :\n" + record.toString());
-
+                                Console.WriteLine();
                                 break;
                             case "8":
                                 Console.WriteLine("Enter Email");
                                 newData = Console.ReadLine();
                                 record.email = newData;
                                 Console.WriteLine("Your Updated  Records :\n" + record.toString());
-
+                                Console.WriteLine();
                                 break;
                             default:
                                 Console.WriteLine("Invalid Selection Input");
