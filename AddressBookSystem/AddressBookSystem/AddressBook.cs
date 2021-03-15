@@ -152,7 +152,31 @@ namespace AddressBookSystem
             {
                 Console.WriteLine("No Such BookAddress Found");
             }
+        }
 
+        public static void deleteRecord(String nameOfRecordToDelete, String bookThatHasRecord)
+        {
+            if (Program.addressBookStore.ContainsKey(bookThatHasRecord))
+            {
+                List<Contact> book = Program.addressBookStore[bookThatHasRecord];
+                if (Program.addressBookStore.ContainsKey(bookThatHasRecord))
+                {
+                    foreach (Contact record in book)
+                    {
+                        if (record.first_name.Equals(nameOfRecordToDelete))
+                        {
+                            book.Remove(record);
+                            Console.WriteLine("Your Record Deleted :");
+                            break;
+                        }
+
+                    }
+                }
+            }
+            else
+            {
+                Console.WriteLine(bookThatHasRecord + " Book Not Found !");
+            }
 
 
         }
