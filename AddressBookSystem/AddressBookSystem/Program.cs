@@ -13,12 +13,12 @@ namespace AddressBookSystem
             Console.WriteLine("Wellcome to address book system program !");
             Console.WriteLine("Enter name of the address book in which you want to add record.");
             String bookName = Console.ReadLine();
-            AddressBook.addRecord(bookName);
+            AddressBook.addBook(bookName);
             Console.WriteLine("Enter the name fo the address book you want to edit.");
             String bookToEdit = Console.ReadLine();
             Console.WriteLine("Enter the first name of the person whose record you want to edit.");
             String recordNameToEdit = Console.ReadLine();
-            AddressBook.editRecord(recordNameToEdit, bookToEdit);
+            AddressBook.editRecordUsingFisrtName(recordNameToEdit, bookToEdit);
             Console.WriteLine("Enter name of the address book you want to delete record in.");
             String bookToDeleteIn = Console.ReadLine();
             Console.WriteLine("Enter first name of the person whose record you want to delete.");
