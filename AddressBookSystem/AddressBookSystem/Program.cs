@@ -25,14 +25,14 @@ namespace AddressBookSystem
                     case 1:
                         Console.WriteLine("Enter name of the address book in which you want to add record.");
                         String bookName = Console.ReadLine();
-                        AddressBook.addRecord(bookName);
+                        AddressBook.addBook(bookName);
                         break;
                     case 2:
                         Console.WriteLine("Enter the name fo the address book you want to edit.");
                         String bookToEdit = Console.ReadLine();
                        Console.WriteLine("Enter the first name of the person whose record you want to edit.");
                         String recordNameToEdit = Console.ReadLine();                      
-                        AddressBook.editRecord(bookToEdit,recordNameToEdit);
+                        AddressBook.editRecordUsingFisrtName(bookToEdit,recordNameToEdit);
                         break;
                     case 3:
                         Console.WriteLine("Enter name of the address book you want to delete record in.");
