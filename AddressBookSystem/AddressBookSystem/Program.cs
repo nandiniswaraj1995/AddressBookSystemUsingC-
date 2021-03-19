@@ -18,7 +18,7 @@ namespace AddressBookSystem
             String bookToEdit = Console.ReadLine();
             Console.WriteLine("Enter the first name of the person whose record you want to edit.");
             String recordNameToEdit = Console.ReadLine();
-            AddressBook.editRecord(recordNameToEdit, bookToEdit);
+            AddressBook.editRecordUsingFisrtName(recordNameToEdit, bookToEdit);
             
 
 
