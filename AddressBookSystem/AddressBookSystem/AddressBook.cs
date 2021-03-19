@@ -29,12 +29,15 @@ namespace AddressBookSystem
             person.email = Console.ReadLine();
 
             addRecord(Program.addressBookStore[bookName], bookName, person);
-            Console.WriteLine("Your Data :\n"+person.toString());
+            Console.WriteLine("Your Data :\n" + newRecord.toString());
             Console.WriteLine();
 
 
         }
+        public static void nameShouldBeDifferentInABook(string name)
+        {
 
+        }
         public static void addRecord(List<Contact> book, string bookName, Contact newRecord)
         {
             bool recordPresentInBook = false;
@@ -55,6 +58,7 @@ namespace AddressBookSystem
             {
                 book.Add(newRecord);
                 Console.WriteLine("Record added to address book " + bookName);
+               
             }
 
         }
