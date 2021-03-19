@@ -19,7 +19,13 @@ namespace AddressBookSystem
             Console.WriteLine("Enter the first name of the person whose record you want to edit.");
             String recordNameToEdit = Console.ReadLine();
             AddressBook.editRecordUsingFisrtName(recordNameToEdit, bookToEdit);
-            
+            Console.WriteLine("Enter name of the address book you want to delete record in.");
+            String bookToDeleteIn = Console.ReadLine();
+            Console.WriteLine("Enter first name of the person whose record you want to delete.");
+            String recordNameToDelete = Console.ReadLine();
+            AddressBook.deleteRecord(recordNameToDelete, bookToDeleteIn);
+
+
 
 
 
