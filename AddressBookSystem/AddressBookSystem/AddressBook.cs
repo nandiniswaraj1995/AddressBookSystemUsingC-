@@ -29,36 +29,19 @@ namespace AddressBookSystem
             person.email = Console.ReadLine();
 
             addRecord(Program.addressBookStore[bookName], bookName, person);
-            Console.WriteLine("Your Data :\n"+person.toString());
-
+           
 
         }
 
         public static void addRecord(List<Contact> book, string bookName, Contact newRecord)
         {
-            bool recordPresentInBook = false;
-            foreach (Contact record in book)
-            {
-                Contact recordCheck = record;
-                if (record == newRecord)
-                {
-                    recordPresentInBook = true;
-                    break;
-                }
-            }
-            if (recordPresentInBook)
-            {
-                Console.WriteLine("Record already exists in address book " + bookName);
-            }
-            else
-            {
                 book.Add(newRecord);
-                Console.WriteLine("Record added to address book " + bookName);
-            }
+                Console.WriteLine("Record added to address book [" + bookName+"]");
+                Console.WriteLine("Your Data :\n" + newRecord.toString());            
 
         }
         // initialize book if not present allready
-        public static void addRecord(string bookName)
+        public static void addBook(string bookName)
         {
             if (!Program.addressBookStore.ContainsKey(bookName))
             {

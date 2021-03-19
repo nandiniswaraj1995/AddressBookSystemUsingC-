@@ -13,7 +13,7 @@ namespace AddressBookSystem
             Console.WriteLine("Wellcome to address book system program !");
             Console.WriteLine("Enter name of the address book in which you want to add record.");
             String bookName = Console.ReadLine();
-            AddressBook.addRecord(bookName);
+            AddressBook.addBook(bookName);
 
 
         }
